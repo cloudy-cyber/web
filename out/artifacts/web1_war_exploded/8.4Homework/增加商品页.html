@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>增加商品页</title>
+    <style type="text/css">
+        .header {
+            margin: auto;
+            width: 1000px;
+            height: 800px;
+        }
+
+        .daohang {
+            height: 100px;
+            position: relative;
+        }
+
+        .daohang #div1 {
+            margin-left: 0;
+            height: 70px;
+            width: 300px;
+            float: left;
+            position: absolute;
+            bottom: 25px;
+        }
+
+        .daohang #div2 {
+            height: 95px;
+            width: 300px;
+            float: right;
+        }
+
+        .paimai {
+            margin: auto;
+            width: 600px;
+            position: relative;
+        }
+
+        .paimai input {
+            position: absolute;
+            left: 180px;
+            width: 180px;
+            height: 30px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="daohang">
+        <div id="div1"><p style="font-size: 35px">在线拍卖系统</p></div>
+        <div id="div2"><input type="submit" value="注销" style="position: absolute; bottom: 10px; right: 10px;width: 65px"></div>
+        <hr style="width: 1000px;size: 5px">
+    </div>
+    <div class="paimai">
+        <span style="color: blueviolet;font-size: 30px;">拍卖品信息</span>
+        <div style="height: 40px" id="mingcheng">
+            <span style="margin-left: 140px;">名称:</span><input type="text">
+        </div>
+        <div style="height: 40px" id="qipaijia">
+            <span style="margin-left: 125px;">起拍价:</span><input style="display: inline" type="number"><span
+                style="color: red;margin-left: 200px">必须为数字</span>
+        </div>
+        <div style="height: 40px" id="dijia">
+            <span style="margin-left: 140px;">底价:</span><input type="number"><span
+                style="color: red;margin-left: 200px">必须为数字</span>
+        </div>
+        <div style="height: 40px" id="kaishishijian">
+            <span style="margin-left: 110px;">开始时间:</span><input type="text"><span
+                style="color: red;margin-left: 200px">格式:2020-05-05 12:30:00</span>
+        </div>
+        <div style="height: 40px" id="jieshushijian">
+            <span style="margin-left: 110px;">结束时间:</span><input type="text"><span
+                style="color: red;margin-left: 200px">格式:2020-05-05 12:30:00</span>
+        </div>
+        <div style="height: 155px" id="paimaipintupian">
+            <span style="margin-left: 95px;">拍卖品图片:</span>
+            <input
+                    style="width: 150px;height: 150px;" type="image" src="images/ad20.jpg"><input
+                style="margin-left: 160px" type="file"><br>
+        </div>
+        <div style="height: 80px;position: relative" id="miaoshu">
+            <span style="margin-left: 140px;position: absolute;top: 0;height: 70px">描述:</span><textarea
+                style="height: 60px;width: 300px;margin-left: 180px"></textarea>
+        </div>
+        <div>
+            <input style="width: 100px;height: 42px;background-color: grey;color: white;font-size: 15px" type="submit" value="保存">
+            <input style="width: 100px;height: 42px;background-color: grey;color: white;font-size: 15px;margin-left: 120px" type="submit" value="取消">
+        </div>
+    </div>
+</div>
+</body>
+</html>

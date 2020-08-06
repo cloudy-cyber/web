@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>竞拍页</title>
+    <style type="text/css">
+        .header {
+            margin: auto;
+            width: 1000px;
+            height: 800px;
+        }
+
+        .daohang {
+            height: 100px;
+            position: relative;
+        }
+
+        .daohang #div1 {
+            margin-left: 0;
+            height: 70px;
+            width: 300px;
+            float: left;
+            position: absolute;
+            bottom: 25px;
+        }
+
+        .daohang #div2 {
+            height: 95px;
+            width: 300px;
+            float: right;
+        }
+        .xinxitupian{
+            width: 1000px;
+            height: 220px;
+        }
+        #biaoge1{
+            width: 600px;
+            height: 200px;
+            float: left;
+        }
+        #tupian{
+            width: 300px;
+            height: 230px;
+            float: right;
+            right: 1px;
+            position: relative;
+        }
+
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table tr,td,th{
+            border: 1px solid black;
+            width: 250px;
+            height: 28px;
+            margin: 0px;
+            padding: 0px;
+        }
+        .chujia{
+            width: 1000px;
+            height: 50px;
+            border: 1px solid black;
+        }
+        .anniu{
+            width: 1000px;
+            height: 100px;
+        }
+        .biaoge2 th,tr,td{
+            height: 40px;
+            text-align: center;
+        }
+        .biaoge2 tr:nth-child(odd){
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="daohang">
+        <div id="div1"><p style="font-size: 35px">在线拍卖系统</p></div>
+        <div id="div2"><input type="submit" value="注销" style="position: absolute; bottom: 10px; right: 10px;width: 65px"></div>
+        <hr style="width: 1000px;size: 5px">
+    </div>
+    <div class="xinxitupian">
+        <div id="biaoge1">
+            <table>
+                <tr>
+                    <td style="text-align: center">名称:</td>
+                    <td style="width: 350px">花瓶</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center">描述:</td>
+                    <td style="width: 350px">古董</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center">开始时间:</td>
+                    <td style="width: 350px">2010-01-01 16:30:00</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center">结束时间:</td>
+                    <td style="width: 350px">2010-02-02 16:30:00</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center">起拍价:</td>
+                    <td style="width: 350px">2,000</td>
+                </tr>
+            </table>
+        </div>
+        <div id="tupian">
+            <img style="position: absolute;right: 0" src="images/ad20.jpg" alt="">
+        </div>
+    </div>
+    <div class="chujia">
+        出价: <input type="number" value="4000">
+        <input style="background-image: url(images/butto.jpg);color: white;font-size: 15px;width: 80px" type="submit" value="竞拍"><br>
+        <span style="color: red">不能低于最高价格竞拍</span>
+    </div>
+    <br>
+    <div class="anniu">
+        <input style="background-image: url(images/butto.jpg);color: white;font-size: 15px;width: 120px;height: 50px" type="submit" value="刷新">&nbsp;
+        <input style="background-image: url(images/butto.jpg);color: white;font-size: 15px;width: 120px;height: 50px" type="submit" value="返回列表">
+    </div>
+    <div class="chujiajilu">
+        <span>出价记录</span>
+        <br>
+        <br>
+        <table class="biaoge2">
+            <tr>
+                <th>竞拍时间</th>
+                <th>竞拍价格</th>
+                <th>竞拍人</th>
+            </tr>
+            <tr>
+                <td>2010-01-05 12:50:01</td>
+                <td>50000,00</td>
+                <td style="text-align: left">张三</td>
+            </tr>
+            <tr>
+                <td>2010-01-05 11:50:01</td>
+                <td>40000,00</td>
+                <td style="text-align: left">李四</td>
+            </tr>
+            <tr>
+                <td>2010-01-05 10:50:01</td>
+                <td>30000,00</td>
+                <td style="text-align: left">王五</td>
+            </tr>
+            <tr>
+                <td>2010-01-05 09:50:01</td>
+                <td>20000,00</td>
+                <td style="text-align: left">李靖</td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
