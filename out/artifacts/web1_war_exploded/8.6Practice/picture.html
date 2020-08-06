@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="images/1.jpg" id="p1" alt="">
+<script>
+    setInterval(change, 1000);
+    var i = 1;
+
+    function change() {
+            i = i % 2 + 1;
+            document.getElementById("p1").src = "images/i.jpg";
+    }
+</script>
+</body>
+</html>

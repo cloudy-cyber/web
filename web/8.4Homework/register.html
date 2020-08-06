@@ -41,28 +41,28 @@
     </h2>
     <div id="div2">
         <span style="color: skyblue;font-size: 10px">*</span>
-        <span style="font-size: 15px">用户名：</span><input type="text" name="username" value="">
+        <span style="font-size: 15px">用户名：</span><input type="text" name="username" value="" id="zhuce">
         </div>
     <div id="div3">
         <span style="color: red">用户名要求不低于6个字符</span>
     </div>
     <div id="div4">
         <span style="color: skyblue;font-size: 10px">*</span>
-        <span style="font-size: 15px">密码：</span><input type="password" name="password" value="">
+        <span style="font-size: 15px">密码：</span><input type="password" name="password" value="" id="mima">
     </div>
     <div id="div5">
         <span style="color: red">密码要求不低于6个字符</span>
     </div>
     <div id="div6">
         <span style="color: skyblue;font-size: 10px">*</span>
-        <span style="font-size: 15px">身份证号：</span><input type="text" value="">
+        <span style="font-size: 15px">身份证号：</span><input type="text" value="" id="sfz">
     </div>
     <div id="div7">
         <span style="color: red">身份证号必填</span>
     </div>
     <div id="div8">
         <span style="color: skyblue;font-size: 10px">*</span>
-        <span style="font-size: 15px">电话：</span><input type="text" value="">
+        <span style="font-size: 15px">电话：</span><input type="text" value="" id="dianhua">
     </div>
     <div id="div9">
         <span style="color: red">电话号码必填</span>
@@ -83,8 +83,31 @@
           <input type="checkbox"><span style="font-size: 15px">我同意《服务条款》</span>
     </div>
     <div id="div14">
-          <input type="button" value="立即注册">
+          <input type="button" value="立即注册" onclick="validate()">
     </div>
 </div>
+<script>
+    function validate() {
+        var result1=/\w{6,13}/.test(document.getElementById("zhuce").value);
+        var result2=/\w{6,13}/.test(document.getElementById("mima").value);
+        var result3=/\w{6,13}/.test(document.getElementById("sfz").value);
+        var result4=/\w{6,13}/.test(document.getElementById("dianhua").value);
+        // var result3=document.getElementById("sfz").value;
+        // var result4=document.getElementById("dianhua").value;
+        if(result1===false) {
+            window.alert("用户名不低于6个字符");
+            return;
+        }else if(result2===false){
+            window.alert("密码不低于6个字符");
+            return;
+        }else if(result3===false){
+            window.alert("身份证号必填");
+            return;
+        }else if(result4===false){
+            window.alert("电话号码必填");
+            return;
+        }
+    }
+</script>
 </body>
 </html>
