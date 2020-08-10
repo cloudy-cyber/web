@@ -5,14 +5,13 @@
     <title>Title</title>
 </head>
 <body>
-<img src="images/1.jpg" id="p1" alt="">
+<img src="images/1.jpg" id="p1">
 <script>
     setInterval(change, 1000);
     var i = 1;
-
     function change() {
-            i = i % 2 + 1;
-            document.getElementById("p1").src = "images/i.jpg";
+            i = i % 4 + 1;
+            document.getElementById("p1").src = "images/"+i+".jpg";
     }
 </script>
 </body>

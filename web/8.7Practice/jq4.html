@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var i=0;
+            $("#b1").click(function() {
+                i++;
+                $("#number").val(i);
+            });
+            $("#b2").click(function () {
+                if(i<1){
+                    $("#number").val("0");
+                }else {
+                    i--;
+                    $("#number").val(i);
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<span>59</span>
+<input type="button" value="-" id="b2">
+<input type="text" value="0" id="number">
+<input type="button" value="+" id="b1">
+<span>59</span>
+</body>
+</html>
